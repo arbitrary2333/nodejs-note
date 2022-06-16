@@ -1,0 +1,24 @@
+{
+  "name": "nodejs-note",
+  "version": "1.0.0",
+  "description": "nodejs学习笔记",
+  "main": "index.js",
+  "dependencies": {
+    "moment": "^2.29.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arbitrary2333/nodejs-note.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/arbitrary2333/nodejs-note/issues"
+  },
+  "homepage": "https://github.com/arbitrary2333/nodejs-note#readme"
+}

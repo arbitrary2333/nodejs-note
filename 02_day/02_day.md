@@ -104,6 +104,8 @@ res.setHeader('Content-Type', 'text/html; charset=utf-8')
 - 提高代码的可维护性
 - 可以实现按需加载
 
+nodejs遵循CommonJS模块化规范
+
 ## 2、nodejs中模块的分类
 
 - 内置模块（由nodejs官方提供，例如：fs，path，http等）
@@ -130,4 +132,12 @@ res.setHeader('Content-Type', 'text/html; charset=utf-8')
 
 ​		exports与module.exports指向的是同一个对象
 
-注意：export === module.exports
+​		注意：export === module.exports
+
+### 3、exports和module.exports的使用误区
+
+​		时刻谨记，引入require()模块时，得到的永远是module.exports指向的对象
+
+![1655379158173](C:\Users\86180\AppData\Roaming\Typora\typora-user-images\1655379158173.png)
+
+​		注意：为防止混乱，建议不要在同一模块中使用exports和module.exports

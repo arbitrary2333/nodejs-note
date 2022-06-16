@@ -1,0 +1,12 @@
+{
+    "name": "longhui-tools",
+    "version": "1.0.0",
+    "main": "index.js",
+    "description": "提供了格式化时间，HTMLEscape相关的功能",
+    "keywords": [
+        "longhui",
+        "dateFormat",
+        "escape"
+    ],
+    "license": "ISC"
+}
