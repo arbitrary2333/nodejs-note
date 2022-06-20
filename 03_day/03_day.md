@@ -62,30 +62,30 @@ npm install 包名 --save-dev
 
   扩展：i5ting_toc包，可将md文档转换为html文件
 
-  ## 10、开发属于自己的包
+## 10、开发属于自己的包
 
-  ### 	1、初始化包的基本结构：
+### 	1、初始化包的基本结构：
 
-  - package.json（配置文件）
+- package.json（配置文件）
 
-  - index.js（入口文件）
+- index.js（入口文件）
 
-  - README.md（说明文档）
+- README.md（说明文档）
 
-    - 文档中通常包含安装方式、导入方式、功能介绍、开源协议
+  - 文档中通常包含安装方式、导入方式、功能介绍、开源协议
 
-  ###   2、注册NPM账号
+###   2、注册NPM账号
 
-  ###   3、登录npm账号
+###   3、登录npm账号
 
-  `npm login`命令，依次输入账号密码邮箱，密码属于盲打
+`npm login`命令，依次输入账号密码邮箱，密码属于盲打
 
-  注意：在运行npm login之前必须先把包的服务器切换为npm的官方服务器，否则会导致发布包失败（借用命令：nrm ls，nrm use npm）
+注意：在运行npm login之前必须先把包的服务器切换为npm的官方服务器，否则会导致发布包失败（借用命令：nrm ls，nrm use npm）
 
-  ###   4、发布
+###   4、发布
 
-  切换到包的根目录，使用命令`npm publish`，注意：包名不能重复
+切换到包的根目录，使用命令`npm publish`，注意：包名不能重复
 
-  ###   5、删除包
+###   5、删除包
 
-  `npm unpublish 包名 --force`
+`npm unpublish 包名 --force`
