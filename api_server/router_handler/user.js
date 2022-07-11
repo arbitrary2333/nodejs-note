@@ -15,9 +15,9 @@ exports.register = (req, res) => {
   // 接收表单数据
   const userInfo = req.body;
   // 判断数据是否合法
-  if (!userInfo.username || !userInfo.password) {
-    return res.cc("用户名和密码不能为空!");
-  }
+  // if (!userInfo.username || !userInfo.password) {
+  //   return res.cc("用户名和密码不能为空!");
+  // }
   const sqlCheck = "select * from ev_users where username=?";
   db.query(sqlCheck, [userInfo.username], (err, results) => {
     // 执行sql语句失败
