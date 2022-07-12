@@ -11,6 +11,9 @@ app.use(cors());
 // 配置解析表单数据的中间件
 app.use(express.urlencoded({ extended: false }));
 
+// 托管静态资源文件
+app.use('/uploads', express.static('./uploads'))
+
 // 封装res.cc函数,处理响应错误
 app.use((req, res, next) => {
   // status默认值为1,表示失败
@@ -41,7 +44,10 @@ const userinfoRouter = require('./router/userinfo')
 app.use('/my', userinfoRouter)
 
 const artCateRouter = require('./router/artcate')
-app.use('/my/article', artCateRouter)
+app.use('/my/artcate', artCateRouter)
+
+const articleRouter = require('./router/article')
+app.use('/my/article', articleRouter)
 
 const joi = require('joi')
 // 错误级别中间件

@@ -73,10 +73,6 @@ exports.getArtCateById = (req, res) => {
 };
 
 exports.updateCateById = (req, res) => {
-  res.send("ok");
-};
-
-exports.updateCateById = (req, res) => {
     // 定义查询 分类名称 与 分类别名 是否被占用的 SQL 语句
     const sql = `select * from ev_article_cate where Id<>? and (name=? or alias=?)`
     // 执行查重操作
