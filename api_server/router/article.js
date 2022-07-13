@@ -22,6 +22,6 @@ const upload = multer({ dest: path.join(__dirname, '../uploads') })
 // 注意：在当前的路由中，先后使用了两个中间件：
 //       先使用 multer 解析表单数据
 //       再使用 expressJoi 对解析的表单数据进行验证
-router.post('/add', upload.single('cover_img'),expressJoi(add_article_schema), article_handler.addArticle)
+router.post('/add', upload.single('cover_img'), expressJoi(add_article_schema), article_handler.addArticle)
 
 module.exports = router
